@@ -1,8 +1,5 @@
 flask
-keras
-Keras-Preprocessing
 numpy 
 tensorflow
-scikit-learn
 tensorflow-hub
 gunicorn==20.0.4
