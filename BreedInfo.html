@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dog Breed ID</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="static/css/breed.css"/>
+  </head>
+  <body>
+    <style>body{background-color:white}</style>
+      <div class="header">
+        <div class="topnav">
+          <a class="active" href="index.html">Home</a>
+          <a href="BreedInfo.html">Breed Information</a> 
+          <a href="about.html">About Us</a>
+        </div>
+      </div>
+    <div >
+    <section>
+      <div class="col-md-12"></div>
+      <h2>Learn More</h2>
+    </section>
+    <section>
+      <h2>The Breed</h2>
+      <br>
+      <br>
+
+    </section>
+    <section>
+      <div class="container-fluid"> 
+        <br>
+        <br>
+        <br>
+        <p class="choose_breed">To learn more about your dog, please choose the breed that matches the "Breed Result".
+          <br>Or to learn about any breed, please choose whichever breed you are interested in.
+        </p>
+        <label for="dogBreed">Choose a dog breed:</label>
+        <select class="breed_dropdown" breed="dogBreed" id="dogBreed"></select>
+        <br>
+        <br>
+        <br>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>The Facts</h2>
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <td><b>Breed:</b></td>
+                  <td class="breed"></td>
+                </tr>
+                <tr>
+                  <td><b>Description:</b></td>
+                  <td class="description"></td>
+                </tr>
+                <tr>
+                  <td><b>Temperament:</b></td>
+                  <td class="temperament"></td>
+                </tr>
+                <tr>
+                  <td><b>Average Height:</b></td>
+                  <td class="height"></td>
+                </tr>  
+                <tr>
+                  <td><b>Average Weight:</b></td>
+                  <td class="weight"></td>
+                </tr>
+                <tr>
+                  <td><b>Average Life Expectancy:</b></td>
+                  <td class="life"></td>
+                </tr>
+                <tr>
+                  <td><b>Group:</b></td>
+                  <td class="group"></td>
+                </tr>
+                <tr>
+                  <td><b>Grooming Needs:</b></td>
+                  <td class="grooming"></td>
+                </tr> 
+                <tr>
+                  <td><b>Shedding Info:</b></td>
+                  <td class="shedding"></td>
+                  </tr> 
+                <tr>
+                  <td><b>Energy Needs:</b></td>
+                  <td class="energy"></td>
+                </tr> 
+                <tr>
+                  <td><b>Trainability:</b></td>
+                  <td class="training"></td>
+                </tr>
+                <tr>
+                  <td><b>Demeanor:</b></td>
+                  <td class="demeanor"></td>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          
+        </div>
+      </div>
+    </section>  
+    </div>    
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
+      <script type="module" src="static/js/button.js"></script>
+      <script src="static/js/matched_dog_data.js"></script>
+      <script src="static/js/breed.js"></script>
+      <script src="static/js/breedDropDownInfo.js"></script>
+    
+  </body>
+
+</html>

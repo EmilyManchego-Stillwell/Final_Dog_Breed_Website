@@ -1,0 +1,196 @@
+ /* Top Nav */ 
+ .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #0ac880;
+    color: white;
+  }
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #eee;
+
+}
+
+.header {
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right bottom, 
+     rgba(12, 240, 65, 0.5),
+     rgba(30, 108, 217, 0.6)),
+     url("../Images/dog-4415649-18eab39206426b985f7a5f69e3146a2cd1a56c0d-s1200-c85.jpg");
+    
+  background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+  font-size: 14px;
+}
+
+ /* Body */
+  .brd-box {
+    border-bottom: 2px solid #6ca40c;
+  }
+
+  h3.purpose {
+    text-align: center;
+    color:#324412;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  h3.dbi {
+    text-align: center;
+    color:#324412;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+
+  h3.upload {
+    text-align: center;
+    color:#324412;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+
+  h3.results {
+    text-align: center;
+    color:#324412;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 5%;
+  }
+
+  p.purpose {
+    text-align: center;
+    color: #456a03;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 2%; 
+  }
+
+  p.dbi {
+    text-align: center;
+    color: #456a03;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  p.upload_paragraph {
+    text-align: center;
+    color: #456a03;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  p.have_fun {
+    text-align: center;
+    color: #456a03;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  form {
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 5%;
+  }
+
+  #dog_input {
+    margin-top: 5%;
+    border-bottom: 2px solid #6ca40c;
+  }
+  label {
+    padding-left: 5px;
+    font-size: 15px;
+    color: #324412;
+  }
+  input {
+    text-align: center;
+    padding-left: 5px;
+    font-size: 15px;
+    color: #324412;
+  }
+
+  footer {
+    margin-bottom: 360px;
+  }
