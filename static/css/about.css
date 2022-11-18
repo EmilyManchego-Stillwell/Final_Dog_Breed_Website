@@ -20,8 +20,9 @@
   color: black;
 }
 
-.topnav a.active {
-  background-color: #0ac880;
+
+.topnav a.about {
+  background-color: rgba(12, 240, 65, 0.5);
   color: white;
 }
 

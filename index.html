@@ -13,9 +13,9 @@
  <style>body{background-color:white}</style>
 
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="BreedInfo.html">Breed Information</a> 
-    <a href="about.html">About Us</a>
+    <a class="home" href="#home">Home</a>
+    <a class="breedInfo" href="BreedInfo.html">Breed Information</a> 
+    <a class="about" href="about.html">About Us</a>
   <br>
   <br>
   </div>
@@ -26,7 +26,7 @@
         <span class="heading-primary-main">So You Think You Know Your Dog?</span>
         <span class="heading-primary-sub">Upload a Picture to Find out</span>
       </h1>
-      <a href="#" class="btn btn-white btn-animated">Discover your Dog</a>
+      <a href="BreedInfo.html" class="btn btn-white btn-animated">Discover your Dog</a>
     </div>
   </header>
 
@@ -39,12 +39,13 @@
         will take an image of a dog and attempt to <br>classify it with the correct breed.
       </p>
       <p class="have_fun">
-        This model has been trained to 80% accuracy.<br> 
+        This model has been trained to above 80% accuracy.<br> 
         Have Fun!
       </p>
     </div> 
     <div class="col-md-6">
-        <form action="/action_page.php">          
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRxPmh0RCH2LBVtsm2Qy5PnnTu1wlMo-tFmaH8K3Tlxqmy6jpo0iIEq2LEl-39SAQCCDR79149zf-tW/embed?start=false&loop=false&delayms=30000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <!-- <form action="/action_page.php">          
           <h3 class="upload">Upload Dog Picture Here!</h3> 
           <p class="upload_paragraph">When you upload a photo, the neural network will attempt <br> to identify 
             the breed of dog in the image. 
@@ -54,17 +55,10 @@
           <br>
           <input type="submit">
           
-        </form>
+        </form> -->
     </div>  
   </div>
-  <div class="container-fluid"> -->
-    <!-- Results from machine learning upload -->
-    <div class="col-md-12">
-      <h3 class="results">And the dog is...</h3>
-      <!-- Pop up image of uploaded dog -->
-      <!-- Create label of result, which dog breed -->
-    </div> 
-  </div>
+
   <footer></footer> 
 
 </body>

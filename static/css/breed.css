@@ -20,108 +20,84 @@
   color: black;
 }
 
-.topnav a.active {
-  background-color: #0ac880;
+.topnav a.breedInfo {
+  background-color: rgba(12, 240, 65, 0.5);
   color: white;
 }
 
-  .display-2 {
-    text-align: left;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-  }
+.display-2 {
+  text-align: left;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
 
-  section {
-    padding: 2rem 20%;
-  }
+section {
+  padding: 2rem 20%;
+}
 
-  section.h2 {
-    text-align: center;
-  }
-  
-  section:nth-child(2) {
-    background: #0ac880;
-    color: white;
-    clip-path: polygon(0 40%, 100% 0, 150% 100%, 0 150%);
-    padding: 10rem 20%;
-    font-family: 'Lato', sans-serif;
-  }
-  .th {
-    text-align: center;
-  }
+section.h2 {
+  text-align: center;
+}
 
-  body {
-    margin: 0;
-    font: 20px/2.2 system-ui;
-  }
+section:nth-child(2) {
+  background: #09a131;
+  color: white;
+  clip-path: polygon(0 40%, 100% 0, 150% 100%, 0 150%);
+  padding: 10rem 20%;
+  font-family: 'Lato', sans-serif;
+}
 
-  /* .jumbotron {
-    background-image: url('../Images/crop_dog.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 300px;
-    background-color:#6ca40c;
-  } */
+h3.upload {
+  text-align: left;
+  color:#324412;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
 
-  /* body */
-  /* h2{
-    background: white;
-    color:#223303;
-    font-size: 25;
-    font-family: "Georgia", serif;
-    font-weight: bold;  
-    text-align: center;
-  }
-  .center {
-  display: block;
-  margin-top: 2%;
-  margin-left: 50%;
-  margin-bottom: 2%;
-  width: 50%;
-  }
+/* p.upload_paragraph {
+  text-align: center;
+  color: #456a03;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+} */
 
-  #dog_facts {
-    border-top: 2px solid #6ca40c;
-  }
+form {
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 5%;
+}
 
-  /*previous/next*/
-  /* .container {
-    margin-top: 100px;
-    margin-left: 20px;
-  }
+label {
+  text-align: left;
+  padding-left: 5px;
+  font-size: medium;
+  color: #324412;
+  font-family: 'Lato', sans-serif;
+}
 
-  .no-box {
-    padding-left: 5px;
-    font-size: 60px;
-  }
+input {
+  text-align: left;
+  padding-left: 5px;
+  font-size: 15px;
+  color: #000000;
+  font-family: 'Lato', sans-serif;;
+}
 
-  span {
-    font-size: 15px;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-  } */ */
+select {
+  position:relative;
+  display:inline-block;
+  width:fit-content;
+  font-family: 'Lato', sans-serif;
+  font-size: medium;
+}
 
-  /* .prev_btn { */
-    /* background-color: black;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
+body {
+  margin: 0;
+  font: 20px/2.2 system-ui;
+}
 
-  .next_btn {
-    background-color: #6ca40c;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-
-  .prev_btn:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .next_btn:hover {
-    background-color: #ddd;
-    color: black;
-  } */
-
-    
+p.choose_breed {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}

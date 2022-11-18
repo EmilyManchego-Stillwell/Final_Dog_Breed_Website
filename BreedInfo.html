@@ -12,24 +12,31 @@
     <style>body{background-color:white}</style>
       <div class="header">
         <div class="topnav">
-          <a class="active" href="index.html">Home</a>
-          <a href="BreedInfo.html">Breed Information</a> 
-          <a href="about.html">About Us</a>
+          <a class="home" href="index.html">Home</a>
+          <a class="breedInfo" href="BreedInfo.html">Breed Information</a> 
+          <a class="about" href="about.html">About Us</a>
         </div>
       </div>
     <div >
     <section>
       <div class="col-md-12"></div>
-      <h2>Learn More</h2>
+      <h2>Discover the Breed</h2>
     </section>
     <section>
-      <h2>The Breed</h2>
-      <br>
-      <br>
-
+      <h2>Learn More!</h2>
+      
     </section>
     <section>
-      <div class="container-fluid"> 
+      <form method="post"  enctype="multipart/form-data">
+        <h3 class="upload">Upload Dog Picture Here to See the Predicted Breed Result!</h3> 
+        <label for="img">Select image:</label>
+        <input type="file" id="dogImage" name="img" accept="image/*"/>
+        <input type="submit" value="submit"/>
+      </form>
+      <div class="container-fluid">
+        <br>
+        <br>
+        {{prediction_result}} 
         <br>
         <br>
         <br>
@@ -39,13 +46,11 @@
         <label for="dogBreed">Choose a dog breed:</label>
         <select class="breed_dropdown" breed="dogBreed" id="dogBreed"></select>
         <br>
-        <br>
-        <br>
       </div>
     </section>
     <section>
       <div class="container">
-        <h2>The Facts</h2>
+        <h2 class="facts">The Facts</h2>
         <div class="row">
           <div class="col-md-12">
             <table class="table table-striped">
@@ -112,6 +117,7 @@
       <script src="static/js/matched_dog_data.js"></script>
       <script src="static/js/breed.js"></script>
       <script src="static/js/breedDropDownInfo.js"></script>
+      <!-- <script src="static/js/app.js"></script> -->
     
   </body>
 
