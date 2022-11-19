@@ -5,7 +5,7 @@ import re
 
 from flask import Flask, request, render_template, send_from_directory
 
-loaded_model = tf.keras.models.load_model('../ml_model/final_export/trained_model.h5',
+loaded_model = tf.keras.models.load_model('ml_model/final_export/trained_model.h5',
     custom_objects={'KerasLayer': hub.KerasLayer(
     "https://tfhub.dev/tensorflow/resnet_50/classification/1",
     input_shape=(224, 224, 3),
