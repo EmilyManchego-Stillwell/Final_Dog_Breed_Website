@@ -2,4 +2,3 @@ flask
 numpy 
 tensorflow-cpu
 tensorflow-hub
-gunicorn==20.0.4

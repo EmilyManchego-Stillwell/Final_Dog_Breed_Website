@@ -3,9 +3,9 @@ import tensorflow_hub as hub
 import numpy as np
 import re
 
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, send_from_directory
 
-loaded_model = tf.keras.models.load_model('./ml_model/final_export/trained_model.h5',
+loaded_model = tf.keras.models.load_model('../ml_model/final_export/trained_model.h5',
     custom_objects={'KerasLayer': hub.KerasLayer(
     "https://tfhub.dev/tensorflow/resnet_50/classification/1",
     input_shape=(224, 224, 3),
@@ -126,21 +126,24 @@ class_names = ['n02085620-Chihuahua',
  'n02113978-Mexican_hairless']
 
 app = Flask(__name__, template_folder='')
-app.config['UPLOAD_FOLDER']= '/tmp'
+app.config['UPLOAD_FOLDER']= '/tmp/'
 
 @app.route('/')
 @app.route('/index.html')
 def index():
     return(render_template('index.html'))
+    
 
 @app.route('/BreedInfo.html', methods=['GET', 'POST'])
 def BreedInfo():
-    prediction_name = ''
-    prediction_percentage = ''
+    # prediction_name = ''
+    # prediction_percentage = ''
     prediction_result = ''
+    img_name = ''
     if request.method == 'POST':
         file = request.files['img']
-        img_path=f'/tmp/{file.filename}'
+        img_name = file.filename
+        img_path=f'{app.config["UPLOAD_FOLDER"]}{file.filename}'
         file.save(img_path)
         
         img_input = image_input(img_path)
@@ -150,11 +153,16 @@ def BreedInfo():
         prediction_percentage = f'{np.max(prediction)*100:0.2f}' 
         prediction_result = f'The predicted breed is { prediction_name }, with a probability of { prediction_percentage }.'
         
-    return(render_template('BreedInfo.html', prediction_result = prediction_result))
+    return(render_template('BreedInfo.html', prediction_result = prediction_result, filename=img_name))
+
+@app.route('/display/<path:filename>')
+def display_image(filename):
+    return send_from_directory(app.config['UPLOAD_FOLDER'], path=filename)
 
 @app.route('/about.html')
 def about():
     return(render_template('about.html'))
+    
 
 img_height = 224
 img_width = 224

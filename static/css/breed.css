@@ -54,12 +54,9 @@ h3.upload {
   font-weight: bold;
 }
 
-/* p.upload_paragraph {
-  text-align: center;
-  color: #456a03;
-  font-size: 15px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-} */
+img.puploaded_image {
+  width:360px;
+}
 
 form {
   text-align: left;

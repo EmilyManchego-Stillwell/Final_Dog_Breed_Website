@@ -34,10 +34,9 @@
         <input type="submit" value="submit"/>
       </form>
       <div class="container-fluid">
-        <br>
-        <br>
         {{prediction_result}} 
         <br>
+        <img src="{{ url_for('display_image', filename=filename)}}" class="puploaded_image">
         <br>
         <br>
         <p class="choose_breed">To learn more about your dog, please choose the breed that matches the "Breed Result".
@@ -117,7 +116,6 @@
       <script src="static/js/matched_dog_data.js"></script>
       <script src="static/js/breed.js"></script>
       <script src="static/js/breedDropDownInfo.js"></script>
-      <!-- <script src="static/js/app.js"></script> -->
     
   </body>
 

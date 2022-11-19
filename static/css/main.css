@@ -118,13 +118,6 @@ body {
     font-weight: bold;
   }
 
-  /* h3.upload {
-    text-align: center;
-    color:#324412;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-  } */
-
   h3.results {
     text-align: center;
     color:#324412;
@@ -148,41 +141,12 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
-  /* p.upload_paragraph {
-    text-align: center;
-    color: #456a03;
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  } */
-
   p.have_fun {
     text-align: center;
     color: #456a03;
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
-
-  /* form {
-    text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 5%;
-  }
-
-  #dog_input {
-    margin-top: 5%;
-    border-bottom: 2px solid #6ca40c;
-  }
-  label {
-    padding-left: 5px;
-    font-size: 15px;
-    color: #324412;
-  }
-  input {
-    text-align: center;
-    padding-left: 5px;
-    font-size: 15px;
-    color: #324412;
-  } */
 
   footer {
     margin-bottom: 26px;
