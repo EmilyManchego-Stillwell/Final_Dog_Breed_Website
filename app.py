@@ -136,8 +136,7 @@ def index():
 
 @app.route('/BreedInfo.html', methods=['GET', 'POST'])
 def BreedInfo():
-    # prediction_name = ''
-    # prediction_percentage = ''
+    prediction_name = ''
     prediction_result = ''
     img_name = ''
     if request.method == 'POST':
@@ -151,9 +150,9 @@ def BreedInfo():
         prediction = loaded_model.predict(img_input)
         prediction_name = label_clean(class_names[np.argmax(prediction)])
         prediction_percentage = f'{np.max(prediction)*100:0.2f}' 
-        prediction_result = f'The predicted breed is { prediction_name }, with a probability of { prediction_percentage }.'
+        prediction_result = f'The predicted breed is { prediction_name }, with a probability of { prediction_percentage }%.'
         
-    return(render_template('BreedInfo.html', prediction_result = prediction_result, filename=img_name))
+    return(render_template('BreedInfo.html', prediction_result = prediction_result, prediction_name=prediction_name, filename=img_name))
 
 @app.route('/display/<path:filename>')
 def display_image(filename):

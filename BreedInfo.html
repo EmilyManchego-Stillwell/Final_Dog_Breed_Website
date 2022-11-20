@@ -39,9 +39,7 @@
         <img src="{{ url_for('display_image', filename=filename)}}" class="puploaded_image">
         <br>
         <br>
-        <p class="choose_breed">To learn more about your dog, please choose the breed that matches the "Breed Result".
-          <br>Or to learn about any breed, please choose whichever breed you are interested in.
-        </p>
+        <p class="choose_breed">If you want to find out information on another dog breed, pick any from the dropdown list.</p>
         <label for="dogBreed">Choose a dog breed:</label>
         <select class="breed_dropdown" breed="dogBreed" id="dogBreed"></select>
         <br>
@@ -116,6 +114,10 @@
       <script src="static/js/matched_dog_data.js"></script>
       <script src="static/js/breed.js"></script>
       <script src="static/js/breedDropDownInfo.js"></script>
+      <script>
+        document.querySelector('#dogBreed').value="{{prediction_name}}";
+        breedSelect();
+      </script>
     
   </body>
 
